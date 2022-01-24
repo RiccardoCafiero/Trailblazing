@@ -77,4 +77,19 @@ public class PlayerMovement : MonoBehaviour
             velocity.y += gravity * Time.deltaTime;
         }
     }
+
+    void MegaJump()
+    {
+        velocity.y += Mathf.Sqrt(jumpHeight * -8 * gravity);
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Jumper")
+        {
+            print("Leeroy Jenkins");
+            MegaJump();
+        }
+    }
 }

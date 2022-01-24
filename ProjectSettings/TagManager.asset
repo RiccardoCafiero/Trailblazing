@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StartPoint
+  - EndPoint
+  - PlatformTrigger
+  - Leaf
+  - Poison
+  - Jumper
   layers:
   - Default
   - TransparentFX
